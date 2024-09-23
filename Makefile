@@ -23,8 +23,13 @@ SRC_BONUS_PATH = $(SRC_PATH)/Bonus
 OBLIGATORY_BUILD_PATH = $(BUILD_PATH)/Obligatory
 BONUS_BUILD_PATH = $(BUILD_PATH)/Bonus
 
-# Include Files
-INCLUDE = $(INCLUDE_PATH)/libft.h
+#Archivos .h
+INCLUDE_FILES_OBLIGATORY = libft.h
+INCLUDE_FILES_BONUS = libft.h
+
+# Include Path and Files
+INCLUDE_PATH_FILES_OBLIGATORY = $(INCLUDE_PATH)/$(INCLUDE_FILES_OBLIGATORY)
+INCLUDE_PATH_FILES_BONUS = $(INCLUDE_PATH)/$(INCLUDE_FILES_BONUS)
 
 # Archivos .c (sin path)
 C_FILES_OBLIGATORY =	ft_isalpha.c\
@@ -96,7 +101,7 @@ $(NAME): $(OBJS_OBLIGATORY)
 	@echo "Completed"
 
 # Compilación de los objetos obligatorios
-$(OBLIGATORY_BUILD_PATH)/%.o: $(SRC_OBLIGATORY_PATH)/%.c $(INCLUDE)
+$(OBLIGATORY_BUILD_PATH)/%.o: $(SRC_OBLIGATORY_PATH)/%.c $(INCLUDE_PATH_FILES_OBLIGATORY)
 	@mkdir -p $(OBLIGATORY_BUILD_PATH)
 	$(CC) $(CFLAGS) -I $(INCLUDE_PATH) -c $< -o $@
 
@@ -110,7 +115,7 @@ $(CACHE): $(NAME) $(OBJS_BONUS)
 	@touch $(CACHE)
 	@echo "Completed"
 
-$(BONUS_BUILD_PATH)/%.o: $(SRC_BONUS_PATH)/%.c $(INCLUDE)
+$(BONUS_BUILD_PATH)/%.o: $(SRC_BONUS_PATH)/%.c $(INCLUDE_PATH_FILES_BONUS)
 	@mkdir -p $(BONUS_BUILD_PATH)
 	$(CC) $(CFLAGS) -I $(INCLUDE_PATH) -c $< -o $@
 
