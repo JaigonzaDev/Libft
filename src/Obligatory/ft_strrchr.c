@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	Searches for the last occurrence of a specific character c in a string s.
+ */
 
 char	*ft_strrchr(const char *s, int c)
 {
@@ -31,13 +33,3 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)s + i);
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// 	const char array[5] = "holo*";
-// 	char *p;
-
-// 	p = ft_strrchr(array, 'o');
-// 	printf("%s", p);
-// 	return (0);
-// }

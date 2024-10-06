@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	The itoa() function constructs a string representation of an integer.
+ */
 
 char	*fill(char const *s1, char const *s2, char *str)
 {
@@ -42,6 +44,9 @@ char	*fill(char const *s1, char const *s2, char *str)
 	str[z] = '\0';
 	return (str);
 }
+/*
+ *	Concatenates two strings (s1 and s2) into a new string.
+ */
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -61,12 +66,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str = fill(s1, s2, str);
 	return (str);
 }
-
-// int	main(void)
-// {
-// char	*p;
-//
-// p = ft_strjoin("hola que tal", "Muy bien, tú?");
-// printf("%s", p);
-// return (0);
-// }

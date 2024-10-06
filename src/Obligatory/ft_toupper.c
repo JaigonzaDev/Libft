@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-#include "stdio.h"
+/*
+ *	The toupper() converts the letter c to upper case, if possible.
+ */
 
 int	ft_toupper(int c)
 {
@@ -22,11 +24,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-
-/* int	main(void)
- {
- char c = 'a';
-
- printf("%c", ft_toupper(-1));
- return (0);
- }*/

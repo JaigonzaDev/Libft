@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	Copy the string src to the end of the string dst,
+ *	ensuring that the maximum size (dstsize) is not exceeded.
+ */
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
@@ -33,13 +36,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (j);
 }
-
-// int	main(void)
-// // {
-// char src[] = "Buenas tardes";
-// char dst[5];
-//
-// printf("%zu\n", ft_strlcpy(dst, src, sizeof(dst)));
-// printf("%s", dst);
-// return (0);
-// }

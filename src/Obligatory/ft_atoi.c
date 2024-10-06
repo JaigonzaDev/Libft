@@ -6,14 +6,15 @@
 /*   By: jaigonza <jaigonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 10:26:55 by jaigonza          #+#    #+#             */
-/*   Updated: 2024/04/16 19:42:19 by jaigonza         ###   ########.fr       */
+/*   Updated: 2024/10/06 12:33:01 by jaigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-//#include "stdio.h"
-
+/*
+ *	The atoi() function converts the initial portion of the string pointed to int.
+ */
 int	ft_atoi(const char *str)
 {
 	int	i;
@@ -40,8 +41,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-/*int	main(void)
-  {
-  printf("%d", ft_atoi("   -2313"));
-  return (0);
-  }*/

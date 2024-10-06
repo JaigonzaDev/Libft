@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-//#include "stdio.h"
+/*
+ *	Concatenate the string src to the end of the string dst,
+ *	ensuring that the maximum size (dstsize) is not exceeded.
+ */
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
@@ -42,12 +45,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (len);
 }
-/*int main(void)
-{
-	char dest[50] = "Hola";
-	const char src[] = "Buenas";
-	ft_strlcat(dest, (char *)src, 50);
-	printf("%u\n", total_length);
-	printf("%s\n", dest);
-	return (0);
-}*/

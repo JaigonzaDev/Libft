@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	Checks for an alphanumeric character.
+ */
 
 int	ft_isalnum(int c)
 {
@@ -24,17 +26,3 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
-
-// int	main(void)
-// {
-// int		i;
-// char	array[11] = "H123 Z{}~**";
-//
-// i = 0;
-// while (array[i] != '\0')
-// {
-// printf("%d", ft_isalnum((int)array[i]));
-// i++;
-// }
-// return (0);
-// }

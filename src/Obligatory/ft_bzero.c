@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	The bzero() function sets the first n bytes of the area starting at s to zero.
+ */
 
 void	ft_bzero(void *s, size_t n)
 {
@@ -30,13 +32,3 @@ void	ft_bzero(void *s, size_t n)
 		return ;
 	}
 }
-
-// int	main(void)
-// {
-// int i = 0;
-// int array[5];
-// ft_bzero(array, 5);
-// while (i++ < 5)
-// printf("%d", array[0]);
-// return (0);
-// }

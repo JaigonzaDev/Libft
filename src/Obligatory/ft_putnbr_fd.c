@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include <fcntl.h>
+/*
+ *	Writes an integer (n) to a specified file descriptor (fd).
+ */
 
 void	ft_putnbr_fd(int n, int fd)
 {
@@ -32,17 +34,3 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd((n % 10) + '0', fd);
 	}
 }
-
-// int	main(void)
-// {
-// 	int	fd;
-
-// 	fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-// 	if (fd == -1)
-// 	{
-// 		return (1);
-// 	}
-// 	ft_putnbr_fd(-2131321, fd);
-// 	close(fd);
-// 	return (0);
-// }

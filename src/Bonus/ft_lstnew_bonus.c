@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstnew.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaigonza <jaigonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/15 14:47:09 by jaigonza          #+#    #+#             */
-/*   Updated: 2024/04/16 17:46:15 by jaigonza         ###   ########.fr       */
+/*   Updated: 2024/10/06 12:33:00 by jaigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	Creates a new node for a linked list.
+ */
 
 t_list	*ft_lstnew(void *content)
 {
@@ -28,15 +30,3 @@ t_list	*ft_lstnew(void *content)
 	}
 	return (nodo);
 }
-
-// int	main(void)
-// {
-// t_list	*i;
-// char	*p;
-//
-// *p = 'a';
-// i = ft_lstnew(p);
-// printf("%c\n", *(char *)i->content);
-// printf("%lu\n", sizeof(t_list));
-// return (0);
-// }

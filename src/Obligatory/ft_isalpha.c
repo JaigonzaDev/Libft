@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-//#include "stdio.h"
+/*
+ *	Checks for an alphabetic character.
+ */
 
 int	ft_isalpha(int c)
 {
@@ -21,17 +23,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-
-/*int	main(void)
-{
-	int i;
-	char array[11] = "H123 Z{}~**";
-
-	i = 0;
-	while (array[i] != '\0')
-	{
-		printf("%d", ft_isalpha((int)array[i]));
-		i++;
-	}
-	return (0);
-}*/

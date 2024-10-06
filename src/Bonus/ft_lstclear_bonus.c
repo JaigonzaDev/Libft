@@ -1,17 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaigonza <jaigonza@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/18 19:21:47 by jaigonza          #+#    #+#             */
-/*   Updated: 2024/04/17 17:04:21 by jaigonza         ###   ########.fr       */
+/*   Updated: 2024/10/06 12:32:56 by jaigonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "stdio.h"
+
+/*
+ *	Delete all nodes in a linked list and free the memory occupied by them.
+ */
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

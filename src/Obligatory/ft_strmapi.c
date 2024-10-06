@@ -12,15 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
-
-// char	isascii(unsigned int index, char c)
-// {
-// if (c >= 'a' && c <= 'z')
-// return (c - ('a' - 'A'));
-// else
-// return (c);
-// }
+/*
+ *	Applies a given function to each character of an input string s, producing a new string as a result.
+ */
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -41,9 +35,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-// int	main(void)
-// {
-// printf("%s", ft_strmapi("hola que tal", &isascii));
-// return (0);
-// }

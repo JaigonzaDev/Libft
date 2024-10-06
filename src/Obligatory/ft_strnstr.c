@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	Searches for a needle string within a haystack string,
+ *	limiting the search to a maximum of len characters from haystack
+ */
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
@@ -39,12 +42,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// char	*p;
-//
-// p = ft_strnstr("hola que tal", "que", 12);
-// printf("%s", p);
-// return (0);
-// }

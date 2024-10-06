@@ -11,7 +11,10 @@
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include "stdio.h"
+
+/*
+ *	The memmove() function copies n bytes from memory area src to memory area dest.
+ */
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

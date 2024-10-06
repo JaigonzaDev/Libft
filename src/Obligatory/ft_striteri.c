@@ -12,14 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
-
-// void	function(unsigned int index, char *c)
-// {
-// if (*c >= 'a' && *c <= 'z')
-// *c = *c - ('a' - 'A');
-// }
-
+/*
+ *	Applies a given function (f) to each character of a string (s)
+ */
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
@@ -33,11 +28,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
-// int	main(void)
-// {
-// char str[] = "hola que tal";
-// ft_striteri(str, &function);
-// printf("%s\n", str);
-// return (0);
-// }

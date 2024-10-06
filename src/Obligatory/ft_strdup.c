@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	Returns a pointer to a new string which is a duplicate of the string s.
+ */
 
 char	*ft_strdup(const char *src)
 {
@@ -34,17 +36,3 @@ char	*ft_strdup(const char *src)
 	dup[i] = '\0';
 	return (dup);
 }
-
-// int	main(void)
-// {
-// char *p;
-//
-// p = ft_strdup("4, sizeof(int)");
-// if (p != NULL)
-// {
-// printf("%s", p);
-// free(p);
-// return (0);
-// }
-// return (1);
-// }

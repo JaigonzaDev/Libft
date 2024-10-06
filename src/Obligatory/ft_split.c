@@ -54,6 +54,10 @@ static void	*free_strs(char**strs)
 	return (NULL);
 }
 
+/*
+ *	Splits a string (s) into an array of strings, 
+ *	using a delimiter character (c). 
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**strs;
@@ -82,18 +86,3 @@ char	**ft_split(char const *s, char c)
 	}
 	return (strs);
 }
-
-/*int main()
-  {
-  const char	*str = "Hola que tal";
-  char		c = " ";
-  char	result = ft_split(str, c);
-  int			i = 0;
-  while(result[i] != NULL)
-  {
-  printf("%s\n", result);
-  i++;
-  free (result);
-  }
-  return (0);
-  }*/

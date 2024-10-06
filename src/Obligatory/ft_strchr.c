@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	The strchr() function returns a pointer to the first occurrence 
+ *	of the character c in the string s.
+ */
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -31,13 +34,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// const char	array[5] = "hola*";
-// char		*p;
-//
-// p = ft_strchr(array, 'o');
-// printf("%c", *p);
-// return (0);
-// }

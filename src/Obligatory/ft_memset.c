@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	The memset() function fills the first len bytes of the memory 
+ *	area pointed to by s with c.
+ */
 
 void	*ft_memset(void *b, int c, size_t len)
 {

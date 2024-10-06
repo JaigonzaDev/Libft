@@ -20,6 +20,9 @@ static int	ft_isset(char c, const char *set)
 	return (0);
 }
 
+/*
+ *	Remove unwanted characters from the beginning and end of a string s1. 
+ */
 char	*ft_strtrim(const char *s1, const char *set)
 {
 	char	*ret;

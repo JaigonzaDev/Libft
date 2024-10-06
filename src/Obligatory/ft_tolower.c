@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-#include "stdio.h"
+/*
+ *	The tolower() converts the letter c to lower case, if possible.
+ */
 
 int	ft_tolower(int c)
 {
@@ -22,10 +24,3 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
-/* int	main(void)
- {
- char c = 'A';
-
- printf("%c", ft_tolower(c));
- return (0);
-}*/

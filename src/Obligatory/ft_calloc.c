@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	The malloc() function allocates size bytes and returns a pointer to the allocated memory.
+ */
 
 void	*ft_calloc(size_t count, size_t size)
 {
@@ -26,16 +28,3 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (NULL);
 }
-
-// int	main(void)
-// {
-// void	*p;
-//
-// p = ft_calloc(4, sizeof(int));
-// if (p != NULL)
-// {
-// printf("%d", *(int *)p);
-// return (0);
-// }
-// return (1);
-// }

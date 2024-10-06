@@ -12,8 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
-
+/*
+ *	Count the number of characters
+ */
 int	count_char(int num)
 {
 	int	count;
@@ -37,6 +38,9 @@ int	count_char(int num)
 	return (count);
 }
 
+/*
+ *	The itoa() function constructs a string representation of an integer.
+ */
 char	*ft_itoa(int n)
 {
 	int			len;
@@ -64,9 +68,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-
-// int	main(void)
-// {
-// printf("%s", ft_itoa(-2331321));
-// return (0);
-// }

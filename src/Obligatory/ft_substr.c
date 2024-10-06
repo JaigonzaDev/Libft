@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	Extract a substring from a given string s, 
+ *	starting at an index start and taking a maximum of len characters.
+ */
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -42,12 +45,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	else
 		return (NULL);
 }
-
-// int	main(void)
-// {
-// char	*p;
-//
-// p = ft_substr("hola que tal", 4, 12);
-// printf("%s", p);
-// return (0);
-// }

@@ -12,7 +12,10 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	The memchr() function scans the initial n bytes of the memory area 
+ *	pointed to by s for the first instance of c.
+ */
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -29,13 +32,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return ((void *)p);
 }
-
-// int	main(void)
-// {
-// char	*a;
-// char	p[4] = "hola";
-//
-// a = ft_memchr(p, 'o', 4);
-// printf("%s", a);
-// return (0);
-// }

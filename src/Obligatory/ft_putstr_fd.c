@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include <fcntl.h>
+/*
+ *	Writes a string (s) to a specified file descriptor (fd).
+ */
 
 void	ft_putstr_fd(char *s, int fd)
 {
@@ -31,17 +33,3 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 	return ;
 }
-
-// int	main(void)
-// {
-// int	fd;
-//
-// fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
-// if (fd == -1)
-// {
-// return (1);
-// }
-// ft_putstr_fd("hola que tal", fd);
-// close(fd);
-// return (0);
-// }

@@ -12,23 +12,13 @@
 
 #include "libft.h"
 
-// #include <fcntl.h>
+/*
+ *	Writes a string (s) to a specified file descriptor (fd), 
+ *	followed by a newline character (\n).
+ */
 
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
-
-// int	main(void)
-// {
-// 	int fd = open("output.txt", O_WRONLY | O_CREAT | O_TRUNC,
-// 			S_IRUSR | S_IWUSR);
-// 	if (fd == -1)
-// 	{
-// 		return (1);
-// 	}
-// 	ft_putendl_fd("hola que tal", fd);
-// 	close(fd);
-// 	return (0);
-// }

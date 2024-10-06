@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	The memcpy() function copies n bytes from memory area src to memory area dst.
+ */
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -32,13 +34,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
-// int	main(void)
-// {
-// 	char	src[] = "Hola buenas tardees";
-// 	char	dst[20] = "12315";
-
-// 	ft_memcpy(dst, src, sizeof(src));
-// 	printf("dst: %s\n", dst);
-// 	return (0);
-// }

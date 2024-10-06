@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	The strlen() function calculates the length of the string s.
+ */
 
 size_t	ft_strlen(const char *s)
 {
@@ -28,11 +30,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
-
-// int	main(void)
-// {
-// size_t i;
-// const char array[19] = "Hola\n";
-// printf("%zu", i = ft_strlen(array));
-// return (0);
-// }

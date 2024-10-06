@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	Compares the first n bytes of s1 and s2.
+ */
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -33,12 +35,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-/*int main (void)
-{
-	char	s1[] = "Hola1";
-	char	s2[] = "Hola que tal estas";
-	int resultado = ft_strncmp(s1, s2, 4);
-	printf ("Resultado: %d", resultado);
-	return(0);
-}*/

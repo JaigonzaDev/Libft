@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-// #include "stdio.h"
+/*
+ *	Checks for any printable character.
+ */
 
 int	ft_isprint(int c)
 {
@@ -25,17 +27,3 @@ int	ft_isprint(int c)
 		return (0);
 	}
 }
-
-// int	main(void)
-// {
-// int		i;
-// char	array[11] = "H123 Z{}~**";
-//
-// i = 0;
-// while (array[i] != '\0')
-// {
-// printf("%d", ft_isprint((int)array[i]));
-// i++;
-// }
-// return (0);
-// }

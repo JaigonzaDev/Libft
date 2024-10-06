@@ -12,7 +12,9 @@
 
 #include "libft.h"
 
-//#include "stdio.h"
+/*
+ *	Checks whether c is a 7-bit unsigned char value that fits into the ASCII character set.
+ */
 
 int	ft_isascii(int c)
 {
@@ -21,17 +23,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-
-/*int	main(void)
-{
-	int		i;
-	char	array[11] = "H123 Z{}~**";
-
-	i = 0;
-	while (array[i] != '\0')
-	{
-		printf("%d", ft_isascii((int)array[i]));
-		i++;
-	}
-	return (0);
-}*/
